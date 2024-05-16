@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/MovieTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Movie Title"
+                    android:textAlignment="center"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/EssentialDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MovieTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="(Year, Rated, Type)"
+                    android:textAlignment="center"
+                    android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/MovieImage"
+                android:layout_width="284dp"
+                android:layout_height="325dp"
+                android:layout_below="@id/EssentialDetails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/default_poster" />
+
+                <TextView
+                    android:id="@+id/MovieGenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MovieImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="(Genre)"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/MoviePlot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MovieGenre"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="An alien orphan is sent from his dying planet to Earth, where he grows up to become his adoptive home's first and greatest superhero." />
+
+                <TextView
+                    android:id="@+id/MovieLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MoviePlot"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="English"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/MovieRatingsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MoviePlot"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/MovieLanguage"
+                    android:text="Rating:"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/MovieRatings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MoviePlot"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/MovieRatingsLabel"
+                    android:text="10.0"
+                    android:textSize="25sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
